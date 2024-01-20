@@ -1,0 +1,32 @@
+/* 헤더 */
+.headerSet {
+  display: flex;
+  max-width: 1200px;
+  min-width: 800px;
+  height: 40px;
+  border: 1px solid gold;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainArea {
+  display: flex;
+  max-width: 1200px;
+  min-width: 800px;
+  min-height: 800px;
+  border: 0.2rem solid darkcyan;
+  align-items: center;
+}
+
+.mainArea > .labelArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submitBtn {
+  display: flex;
+  background-color: #198754;
+  color: white;
+}
