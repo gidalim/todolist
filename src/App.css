@@ -1,4 +1,11 @@
 /* 헤더 */
+
+html {
+  display: flex;
+  justify-content: center;
+  scroll-behavior: smooth;
+}
+
 .headerSet {
   display: flex;
   max-width: 1200px;
@@ -10,20 +17,68 @@
   align-items: center;
 }
 
+.inputData {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  min-width: 800px;
+}
+
+.inputData > .inputTitle {
+  display: flex;
+  max-width: 150px;
+}
+
+.inputData > .inputDoList {
+  display: flex;
+}
+
+.inputData > .submitBtn {
+  display: flex;
+}
+
 .mainArea {
   display: flex;
+  flex-direction: column;
   max-width: 1200px;
   min-width: 800px;
   min-height: 800px;
   border: 0.2rem solid darkcyan;
   align-items: center;
 }
+.mainArea > .ListBox {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  min-width: 800px;
+  min-height: 800px;
+}
 
-.mainArea > .labelArea {
+/* .mainArea > .ListBox > .ReadyListBox {
+  display: flex;
+  flex-direction: row;
+  width: 1100px;
+  height: 200px;
+  gap: 10px;
+  border: 0.2rem solid red;
+} */
+
+.mainArea > .ListBox > .ReadyListBox {
+  display: flex;
+  width: 1100px;
+  height: 200px;
+  border: 1px solid darkcyan;
+  border-radius: 15px;
+}
+
+/* .mainArea > .ReadyListBox .labelArea {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
+  align-items: flex-start;
+  max-width: 1200px;
+  min-width: 800px;
+  min-height: 400px;
+} */
 
 .submitBtn {
   display: flex;

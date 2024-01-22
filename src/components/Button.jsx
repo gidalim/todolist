@@ -1,7 +1,7 @@
 import React from 'react'
 
-function Button({ clickAddEventHandler, children }) {
-  return (<button onClick={clickAddEventHandler}>{children}</button>
+function Button({ clickEventHandler, children }) {
+  return (<button className="submitBtn" onClick={clickEventHandler}>{children}</button>
   )
 }
 
