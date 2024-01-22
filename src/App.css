@@ -1,3 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Black+Han+Sans:400");
+@import url("https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean");
+/* font-family: 'Black Han Sans', sans-serif; */
+
+@font-face {
+  font-family: "DNFBitBitv2";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf")
+    format("opentype");
+}
+
 html {
   display: flex;
   justify-content: center;
@@ -20,19 +32,22 @@ input::placeholder {
 
 .submitBtn {
   cursor: pointer;
+  font-family: "DNFBitBitv2";
+  letter-spacing: 2px;
 }
 
 .headerSet {
   display: flex;
-  width: 1020px;
-  font-size: 32px;
   justify-content: space-between;
+  width: 970px;
   align-items: center;
   border-radius: 10px;
+  padding: 15px 40px 20px 40px;
+  margin-top: 15px;
   background-color: #e9e4ed;
   color: #61398f;
-  padding: 15px 15px 20px 15px;
-  margin-top: 15px;
+  font-size: 28px;
+  font-family: "DNFBitBitv2";
 }
 
 .labelArea {
@@ -67,6 +82,7 @@ input::placeholder {
   border-radius: 10px;
   font-size: 20px;
   padding: 5px;
+  font-family: "DNFBitBitv2";
 }
 
 .inputData > .inputDoList {
@@ -79,6 +95,7 @@ input::placeholder {
   width: 400px;
   height: 200px;
   font-size: 20px;
+  font-family: "DNFBitBitv2";
 }
 
 .labelArea > .submitBtn {
@@ -100,7 +117,7 @@ input::placeholder {
 }
 
 .mainArea {
-  background-color: #ffffff;
+  background-color: #f5f3f7;
   display: flex;
   flex-direction: column;
   max-width: 1200px;
@@ -115,17 +132,20 @@ input::placeholder {
   max-width: 1200px;
   min-width: 800px;
   min-height: 800px;
+  margin-bottom: 20px;
+  border-radius: 15px;
   background-color: #e9e4ed;
-  font-size: 32px;
   color: #61398f;
+  font-size: 32px;
+  font-family: "DNFBitBitv2";
 }
 
 .ToDoList,
 .DoneLine {
   display: flex;
   align-items: flex-end;
-  font-size: 32px;
-  margin: 0 10px -5px 50px;
+  font-size: 28px;
+  margin: 0 10px -5px 40px;
   padding-top: 15px;
 }
 .mainArea > .ListBox > .ReadyItemBox {
@@ -153,10 +173,11 @@ input::placeholder {
   width: 380px;
   height: 200px;
   border: 1.5px solid #61398f;
-  background-color: #ffffffdc;
+  background-color: #f5f3f7;
   margin: 15px;
   padding: 15px;
   border-radius: 15px;
+  font-family: "DNFBitBitv2";
 }
 .itemBox:hover {
   width: 450px;

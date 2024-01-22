@@ -13,19 +13,28 @@ const ReadyItem = ({ item, isDoneFunction, readyOrNot }) => {
       </div>
       <div className='btnHandler'>
         <div className='deleteBtn'>
-          <Button clickEventHandler={() => isDoneFunction(item.id)}>삭제</Button>
+          <Button clickEventHandler={() => {
+            window.alert('일정이 삭제되었어요!');
+            isDoneFunction(item.id)
+          }}>삭제</Button>
         </div>
         <div className='doneYetBtn'>
           {item.state ? (
             <>
               <div className='yetBtn'>
-                <Button clickEventHandler={() => readyOrNot(item.id)}>안했어</Button>
+                <Button clickEventHandler={() => {
+                  window.alert('일정을 변경했어요.')
+                  readyOrNot(item.id)
+                }}>변경</Button>
               </div>
             </>
           ) : (
             <>
               <div className='doneBtn'>
-                <Button clickEventHandler={() => readyOrNot(item.id)}>해냈다</Button>
+                <Button clickEventHandler={() => {
+                  window.alert('일정을 끝마쳤어요!')
+                  readyOrNot(item.id)
+                }}>완료!</Button>
               </div>
             </>
           )}

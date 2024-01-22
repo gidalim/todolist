@@ -45,7 +45,7 @@ function AddList(props) {
         <input type="text" maxLength={"22"} className='inputTitle' placeholder=' 제목을 작성해주세요.' value={title} onChange={addTitle} />
         <input type="text" className='inputDoList' placeholder='내용을 작성해주세요.' value={doList} onChange={addList} />
       </div>
-      <Button clickEventHandler={AddButtonHandler}>기록하기</Button>
+      <Button clickEventHandler={AddButtonHandler}>기록하기!</Button>
 
     </>
   )

@@ -34,7 +34,7 @@ function ListBox({ toDoList, removeButton, readyOrNot }) {
             />
           ))}
         {toDoList.filter((item) => item.state).length === 0 && (
-          <div className="noItemsMessage">함께 일정을 계획해볼까요?</div>
+          <div className="noItemsMessage">함께 일정을 계획해 볼까요?</div>
         )}
       </div>
     </div>
