@@ -24,6 +24,7 @@ function AddList(props) {
   }
 
   const AddButtonHandler = (e) => {
+
     const addedId = {
       id: Date.now(),
       title,
@@ -44,6 +45,7 @@ function AddList(props) {
         <input type="text" maxLength={"22"} className='inputDoList' placeholder='내용을 작성해주세요.' value={doList} onChange={addList} />
       </div>
       <Button clickEventHandler={AddButtonHandler}>기록하기</Button>
+
     </>
   )
 }
