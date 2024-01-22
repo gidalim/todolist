@@ -38,10 +38,10 @@ function AddList(props) {
   return (
     <>
       <div className='inputData'>
-        title : &nbsp;
-        <input className='inputTitle' value={title} onChange={addTitle} />
-        content :&nbsp;
-        <input className='inputDoList' value={doList} onChange={addList} />
+        Title : &nbsp;
+        <input type="text" maxLength={"12"} className='inputTitle' placeholder=' 제목을 작성해주세요.' value={title} onChange={addTitle} />
+        ToDoList :&nbsp;
+        <input type="text" maxLength={"22"} className='inputDoList' placeholder='내용을 작성해주세요.' value={doList} onChange={addList} />
       </div>
       <Button clickEventHandler={AddButtonHandler}>기록하기</Button>
     </>
