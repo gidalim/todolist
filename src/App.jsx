@@ -8,7 +8,7 @@ import Main from "./components/Main";
 
 function App() {
   return <>
-    <LayOut >
+    <LayOut>
       <Main>
       </Main>
     </LayOut>
