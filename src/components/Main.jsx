@@ -14,7 +14,7 @@ function Main() {
     setToDoList(toDoList.filter((list) => list.id !== id));
   }
 
-  const readyOrnot = (id) => {
+  const readyOrNot = (id) => {
     setToDoList((toDoList) => toDoList.map((item) =>
       (item.id === id ? { ...item, state: !item.state } : item)));
   };
@@ -33,7 +33,7 @@ function Main() {
         <ListBox
           toDoList={toDoList}
           removeButton={removeButton}
-          readyOrnot={readyOrnot} />
+          readyOrNot={readyOrNot} />
       </div>
     </>
   )

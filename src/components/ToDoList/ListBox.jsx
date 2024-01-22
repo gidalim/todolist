@@ -2,7 +2,7 @@ import React from "react"
 import ReadyItem from "./ReadyItem"
 
 
-function ListBox({ toDoList, removeButton, readyOrnot }) {
+function ListBox({ toDoList, removeButton, readyOrNot }) {
   return (
     <div className="ListBox">
       <div className="ToDoList">ToDoList🛠️</div>
@@ -14,7 +14,7 @@ function ListBox({ toDoList, removeButton, readyOrnot }) {
               key={item.id}
               item={item}
               isDoneFunction={removeButton}
-              readyOrnot={readyOrnot}
+              readyOrNot={readyOrNot}
             />
           ))}
         {toDoList.filter((item) => !item.state).length === 0 && (
@@ -30,7 +30,7 @@ function ListBox({ toDoList, removeButton, readyOrnot }) {
               key={item.id}
               item={item}
               isDoneFunction={removeButton}
-              readyOrnot={readyOrnot}
+              readyOrNot={readyOrNot}
             />
           ))}
         {toDoList.filter((item) => item.state).length === 0 && (

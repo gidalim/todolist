@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '../Button';
 
 
-const ReadyItem = ({ item, isDoneFunction, readyOrnot }) => {
+const ReadyItem = ({ item, isDoneFunction, readyOrNot }) => {
   return (
     <div key={item.id} className="itemBox">
       <div className='contentName'>
@@ -19,13 +19,13 @@ const ReadyItem = ({ item, isDoneFunction, readyOrnot }) => {
           {item.state ? (
             <>
               <div className='yetBtn'>
-                <Button clickEventHandler={() => readyOrnot(item.id)}>안했어</Button>
+                <Button clickEventHandler={() => readyOrNot(item.id)}>안했어</Button>
               </div>
             </>
           ) : (
             <>
               <div className='doneBtn'>
-                <Button clickEventHandler={() => readyOrnot(item.id)}>해냈다</Button>
+                <Button clickEventHandler={() => readyOrNot(item.id)}>해냈다</Button>
               </div>
             </>
           )}
