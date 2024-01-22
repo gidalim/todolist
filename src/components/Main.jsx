@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import AddList from "./ToDoList/AddList";
-import ReadyItem from "./ToDoList/ReadyItem";
+import ListBox from "./ToDoList/ListBox";
 
 
 
@@ -12,7 +12,6 @@ function Main() {
 
   const removeButton = (id) => {
     setToDoList(toDoList.filter((list) => list.id !== id));
-
   }
 
   const readyOrnot = (id) => {
@@ -31,43 +30,14 @@ function Main() {
         }} />
       </div>
       <div className="mainArea">
-        <div className="ListBox">
-          <div className="ToDoList">ToDoList🛠️</div>
-          <div className="ReadyItemBox">
-            {toDoList
-              .filter((item) => !item.state)
-              .map((item) => (
-                <ReadyItem
-                  key={item.id}
-                  item={item}
-                  isDoneFunction={removeButton}
-                  readyOrnot={readyOrnot}
-                />
-              ))}
-            {toDoList.filter((item) => !item.state).length === 0 && (
-              <div className="noItemsMessage">모든 일을 다 마쳤어요!</div>
-            )}
-          </div>
-          <div className="DoneLine">Done🎉</div>
-          <div className="DoneItemBox">
-            {toDoList
-              .filter((item) => item.state)
-              .map((item) => (
-                <ReadyItem
-                  key={item.id}
-                  item={item}
-                  isDoneFunction={removeButton}
-                  readyOrnot={readyOrnot}
-                />
-              ))}
-            {toDoList.filter((item) => item.state).length === 0 && (
-              <div className="noItemsMessage">함께 일정을 계획해볼까요?</div>
-            )}
-          </div>
-        </div>
+        <ListBox
+          toDoList={toDoList}
+          removeButton={removeButton}
+          readyOrnot={readyOrnot} />
       </div>
     </>
   )
 }
 
 export default Main
+
