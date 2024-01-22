@@ -29,7 +29,7 @@ function AddList(props) {
       return;
     }
     const addedId = {
-      id: Date.now(),
+      id: Date.now(), //동시에 1/1000초를 채울 수도 있다!!! 그럴 땐 UUID를 사용하자.
       title,
       doList,
       state: false
