@@ -24,7 +24,10 @@ function AddList(props) {
   }
 
   const AddButtonHandler = (e) => {
-
+    if (!title.trim() && !doList.trim()) {
+      alert('제목과 내용을 입력해주세요!');
+      return;
+    }
     const addedId = {
       id: Date.now(),
       title,
@@ -40,9 +43,9 @@ function AddList(props) {
     <>
       <div className='inputData'>
         Title : &nbsp;
-        <input type="text" maxLength={"12"} className='inputTitle' placeholder=' 제목을 작성해주세요.' value={title} onChange={addTitle} />
+        <input type="text" maxLength={"22"} className='inputTitle' placeholder=' 제목을 작성해주세요.' value={title} onChange={addTitle} />
         ToDoList :&nbsp;
-        <input type="text" maxLength={"22"} className='inputDoList' placeholder='내용을 작성해주세요.' value={doList} onChange={addList} />
+        <input type="text" className='inputDoList' placeholder='내용을 작성해주세요.' value={doList} onChange={addList} />
       </div>
       <Button clickEventHandler={AddButtonHandler}>기록하기</Button>
 
