@@ -4,4 +4,4 @@
 
 ### 내일배움 캠프
 
-## isDone 제작 : https://youtu.be/0b7qs1P7re4?si=WxwEk0tcQjSZu7Fc
+## isDone 제작참고 : https://youtu.be/0b7qs1P7re4?si=WxwEk0tcQjSZu7Fc

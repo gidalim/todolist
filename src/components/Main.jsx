@@ -43,6 +43,9 @@ function Main() {
                   readyOrnot={readyOrnot}
                 />
               ))}
+            {toDoList.filter((item) => !item.state).length === 0 && (
+              <div className="noItemsMessage">모든 일을 다 마쳤어요!</div>
+            )}
           </div>
           <div className="centerLine"></div>
           <div className="DoneItemBox">
@@ -56,6 +59,9 @@ function Main() {
                   readyOrnot={readyOrnot}
                 />
               ))}
+            {toDoList.filter((item) => item.state).length === 0 && (
+              <div className="noItemsMessage">함께 일정을 계획해볼까요?</div>
+            )}
           </div>
         </div>
       </div>
