@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import ReadyList from './ReadyList';
 import Button from '../Button';
 
 // onSubmit: ({title: string; content: string;}) => void; 
@@ -44,7 +43,7 @@ function AddList(props) {
         content :&nbsp;
         <input className='inputDoList' value={doList} onChange={addList} />
       </div>
-      <Button clickEventHandler={AddButtonHandler}>제출버튼입니당</Button>
+      <Button clickEventHandler={AddButtonHandler}>기록하기</Button>
     </>
   )
 }
