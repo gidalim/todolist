@@ -1,0 +1,270 @@
+@font-face {
+  font-family: "DNFBitBitv2";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf")
+    format("opentype");
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f5f3f7;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+.submitBtn {
+  cursor: pointer;
+  font-family: "DNFBitBitv2";
+  letter-spacing: 2px;
+}
+
+.headerSet {
+  display: flex;
+  justify-content: space-between;
+  width: 970px;
+  align-items: center;
+  border-radius: 10px;
+  padding: 15px 40px 20px 40px;
+  margin-top: 15px;
+  background-color: #e9e4ed;
+  color: #61398f;
+  font-size: 28px;
+  font-family: "DNFBitBitv2";
+}
+
+.labelArea {
+  display: flex;
+  background-color: #e9e4ed;
+  width: 950px;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 20px 50px 50px 50px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.inputData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin-bottom: 15px;
+}
+
+.inputData > .inputTitle {
+  display: flex;
+  border: 1.5px solid #61398f;
+  background-color: #ffffffdc;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 5px;
+  font-family: "DNFBitBitv2";
+}
+
+.inputData > .inputDoList {
+  display: flex;
+  border: 1.5px solid #61398f;
+  background-color: #ffffffdc;
+  justify-content: flex-start;
+  border-radius: 10px;
+  margin-top: 15px;
+  width: 400px;
+  height: 200px;
+  font-size: 20px;
+  font-family: "DNFBitBitv2";
+}
+
+.labelArea > .submitBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #61398f;
+  font-size: 1rem;
+  color: #ffffffdc;
+  border: transparent;
+  width: 120px;
+  height: 40px;
+}
+
+.labelArea > .submitBtn:hover {
+  background-color: #512881;
+  transition: all 0.3s;
+}
+
+.mainArea {
+  background-color: #f5f3f7;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  min-width: 800px;
+  min-height: 800px;
+  align-items: center;
+}
+.mainArea > .ListBox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 1200px;
+  min-width: 800px;
+  min-height: 800px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  background-color: #e9e4ed;
+  color: #61398f;
+  font-size: 32px;
+  font-family: "DNFBitBitv2";
+}
+
+.ToDoList,
+.DoneLine {
+  display: flex;
+  align-items: flex-end;
+  font-size: 28px;
+  margin: 0 10px -5px 40px;
+  padding-top: 15px;
+}
+.mainArea > .ListBox > .ReadyItemBox {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1050px;
+  min-height: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainArea > .ListBox > .DoneItemBox {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1050px;
+  min-height: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 380px;
+  height: 200px;
+  border: 1.5px solid #61398f;
+  background-color: #f5f3f7;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 15px;
+  font-family: "DNFBitBitv2";
+}
+.itemBox:hover {
+  width: 450px;
+  height: 300px;
+  transition-duration: 0.5s;
+}
+.itemBox:hover > .contentName {
+  width: 420px;
+  transition-duration: 0.5s;
+}
+.itemBox:hover > .content {
+  width: 420px;
+  height: 260px;
+  transition-duration: 0.5s;
+}
+
+.itemBox > .contentName {
+  display: flex;
+  width: 250px;
+  height: 30px;
+  margin: 10px;
+  font-size: 22px;
+  color: #333333;
+  align-items: center;
+}
+
+.itemBox > .content {
+  margin: 10px;
+  width: 250px;
+  height: 60px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.itemBox > .btnHandler {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.btnHandler > .deleteBtn > .submitBtn {
+  background-color: #363636;
+  color: #dfdfdf;
+  font-size: 1rem;
+  width: 80px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 0.1rem;
+}
+
+.btnHandler > .deleteBtn > .submitBtn:hover {
+  background-color: #45484a;
+  transition: all 0.3s;
+}
+
+.doneYetBtn > .doneBtn > .submitBtn {
+  background-color: #61398f;
+  color: #dfdfdf;
+  border: transparent;
+  font-size: 1rem;
+  width: 80px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+.doneYetBtn > .doneBtn > .submitBtn:hover {
+  background-color: #512881;
+  transition: all 0.3s;
+}
+
+.doneYetBtn > .yetBtn > .submitBtn {
+  background-color: #671818;
+  color: #dfdfdf;
+  border: transparent;
+  font-size: 1rem;
+  width: 80px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+
+.doneYetBtn > .yetBtn > .submitBtn:hover {
+  background-color: #a52834;
+  transition: all 0.3s;
+}
