@@ -7,11 +7,11 @@ import Main from "./components/Main";
 
 
 function App() {
-  return <>
+  return (
     <LayOut>
       <Main />
     </LayOut>
-  </>
+  )
 }
 
 export default App;
