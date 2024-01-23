@@ -1,16 +1,10 @@
 import React, { useState } from 'react'
 import Button from '../Button';
 
-// onSubmit: ({title: string; content: string;}) => void; 
-
 
 function AddList(props) {
 
 
-  // const [toDoList, setToDoList] = useState([
-  //   { id: 1, title: '예시제목', doList: '해야 할 일', state: false },
-  //   { id: 2, title: '예시제목2', doList: '끝마친 일', state: true },
-  // ])
 
   const [title, setTitle] = useState('');
   const [doList, setDoList] = useState('');

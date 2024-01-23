@@ -2,6 +2,8 @@ import React from 'react';
 import Button from '../Button';
 
 
+
+
 const ReadyItem = ({ item, isDoneFunction, readyOrNot }) => {
   return (
     <div key={item.id} className="itemBox">
@@ -14,8 +16,12 @@ const ReadyItem = ({ item, isDoneFunction, readyOrNot }) => {
       <div className='btnHandler'>
         <div className='deleteBtn'>
           <Button clickEventHandler={() => {
-            window.alert('일정이 삭제되었어요!');
-            isDoneFunction(item.id)
+            const isconfirmed = window.confirm('일정이 삭제하시겠어요?');
+            if (isconfirmed) {
+              isDoneFunction(item.id)
+              return;
+            }
+            alert('삭제가 취소되었습니다.')
           }}>삭제</Button>
         </div>
         <div className='doneYetBtn'>

@@ -1,5 +1,3 @@
-//헤더가 들어갈 자리입니다.
-
 import React from 'react'
 
 
