@@ -31,6 +31,7 @@ function AddList(props) {
     setTitle('')
     setDoList('')
     props.onSubmit(addedId)
+    window.alert('새로운 일정을 등록했어요!')
   };
 
   return (
@@ -40,7 +41,6 @@ function AddList(props) {
         <input type="text" className='inputDoList' placeholder='내용을 작성해주세요.' value={doList} onChange={addList} />
       </div>
       <Button clickEventHandler={() => {
-        window.alert('새로운 일정을 등록했어요!')
         AddButtonHandler()
       }}>기록하기!</Button>
 

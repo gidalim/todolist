@@ -19,15 +19,15 @@ function Main() {
       (item.id === id ? { ...item, state: !item.state } : item)));
   };
 
+  const AddToDoList = (item) => {
+    setToDoList((toDoList) => [...toDoList, item]);
+  }
+
 
   return (
     <>
       <div className="labelArea">
-        <AddList onSubmit={(item) => {
-          setToDoList([
-            ...toDoList, item
-          ])
-        }} />
+        <AddList onSubmit={AddToDoList} />
       </div>
       <div className="mainArea">
         <ListBox
