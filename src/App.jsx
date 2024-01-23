@@ -1,6 +1,6 @@
 import React from "react";
-import "./reset.css";
-import "./App.css";
+import "./style/reset.css";
+import "./style/App.css";
 import LayOut from "./components/LayOut";
 import Main from "./components/Main";
 
@@ -9,8 +9,7 @@ import Main from "./components/Main";
 function App() {
   return <>
     <LayOut>
-      <Main>
-      </Main>
+      <Main />
     </LayOut>
   </>
 }
